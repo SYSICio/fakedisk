@@ -1,0 +1,13 @@
+# build output
+*.obj
+*.res
+/bin/
+
+# test artifacts
+/test/out.txt
+/test/exported.txt
+*.fdk
+
+# editor / OS noise
+.vscode/
+Thumbs.db

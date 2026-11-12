@@ -1,0 +1,19 @@
+format test.fdk 16M /v:DEMO
+mkdir /docs
+mkdir /tools
+copy C:\Users\ncyc\Desktop\fakedisk\test\hello.txt /docs\hello.txt
+copy C:\Users\ncyc\Desktop\fakedisk\test\pic.png /docs\pic.png
+copy C:\Windows\System32\notepad.exe /tools\notepad.exe
+copy C:\Users\ncyc\Desktop\fakedisk\test\runme.bat /tools\runme.bat
+dir /docs
+type /docs/hello.txt
+attr /docs/hello.txt +R
+ren /docs/hello.txt hi.txt
+move /docs/hi.txt /tools/hi.txt
+vol NEWVOL
+info
+fsck
+export /tools/hi.txt C:\Users\ncyc\Desktop\fakedisk\test\exported.txt
+run /tools/runme.bat
+dir /tools
+exit

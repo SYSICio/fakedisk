@@ -1,0 +1,4 @@
+fakedisk 虚拟磁盘测试文件
+第2行：中文内容 ✓
+第3行：LZNT1 压缩与 CRC 校验测试
+第4行：1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ

@@ -1,0 +1,6 @@
+open test.fdk
+xcopy C:\Users\ncyc\Desktop\fakedisk\test\assets /assets
+dir /assets
+dir /assets/sub
+fsck
+exit
